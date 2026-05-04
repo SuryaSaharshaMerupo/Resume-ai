@@ -48,6 +48,14 @@ export default function SignupPage() {
         .btn:disabled{opacity:0.5;cursor:not-allowed}
         .lnk{margin-top:24px;font-size:12px;color:#6b6b64;text-align:center}
         .lnk span{color:#c8a96e;cursor:pointer}
+        @media (max-width:420px){
+          .wrap{padding:20px 14px;align-items:flex-start}
+          .card{padding:28px 18px;max-width:100%}
+          .logo{font-size:16px;letter-spacing:0.08em;margin-bottom:24px;overflow-wrap:anywhere}
+          .title{font-size:30px}
+          .sub{line-height:1.6;margin-bottom:24px}
+          .btn{letter-spacing:0.12em}
+        }
       `}</style>
       <div className="wrap">
         <div className="card">

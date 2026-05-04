@@ -1,16 +1,15 @@
 // frontend/services/api/resume.ts
 import { tokenManager } from "../auth/tokenManager";
+import { apiUrl } from "./config";
 import { parseApiResponse } from "./response";
 import { downloadResumePdf } from "../pdf/resumePdf";
-
-const BASE = process.env.NEXT_PUBLIC_API_URL;
 
 export const resumeApi = {
   tailor: async (file: File, jd: string) => {
     const form = new FormData();
     form.append("file", file);
     form.append("jd", jd);
-    const res = await fetch(`${BASE}/resume/tailor`, {
+    const res = await fetch(apiUrl("/resume/tailor"), {
       method: "POST",
       headers: { Authorization: `Bearer ${tokenManager.getToken()}` },
       body: form,
@@ -19,7 +18,7 @@ export const resumeApi = {
   },
 
   history: async () => {
-    const res = await fetch(`${BASE}/resume/history`, {
+    const res = await fetch(apiUrl("/resume/history"), {
       headers: {
         Authorization: `Bearer ${tokenManager.getToken()}`,
         "Content-Type": "application/json",
@@ -29,7 +28,7 @@ export const resumeApi = {
   },
 
   chatEdit: async (resume_text: string, instruction: string) => {
-    const res = await fetch(`${BASE}/resume/chat-edit`, {
+    const res = await fetch(apiUrl("/resume/chat-edit"), {
       method: "POST",
       headers: {
         Authorization: `Bearer ${tokenManager.getToken()}`,
@@ -41,7 +40,7 @@ export const resumeApi = {
   },
 
   download: async (resumeId: number) => {
-    const res = await fetch(`${BASE}/resume/${resumeId}/download`, {
+    const res = await fetch(apiUrl(`/resume/${resumeId}/download`), {
       headers: { Authorization: `Bearer ${tokenManager.getToken()}` },
     });
     if (!res.ok) throw new Error("Download failed");

@@ -52,6 +52,14 @@ export default function LoginPage() {
         .auth-btn:disabled { opacity: 0.5; cursor: not-allowed; }
         .auth-link { margin-top: 24px; font-size: 12px; color: #6b6b64; text-align: center; }
         .auth-link a { color: #c8a96e; text-decoration: none; }
+        @media (max-width: 420px) {
+          .auth-wrap { padding: 20px 14px; align-items: flex-start; }
+          .auth-card { padding: 28px 18px; max-width: 100%; }
+          .auth-logo { font-size: 16px; letter-spacing: 0.08em; margin-bottom: 24px; overflow-wrap: anywhere; }
+          .auth-title { font-size: 30px; }
+          .auth-sub { line-height: 1.6; margin-bottom: 24px; }
+          .auth-btn { letter-spacing: 0.12em; }
+        }
       `}</style>
       <div className="auth-wrap">
         <div className="auth-card">

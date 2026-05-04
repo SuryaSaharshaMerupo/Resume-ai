@@ -90,6 +90,15 @@ export default function VerifyOtpPage() {
         .resend{font-size:12px;color:#6b6b64}
         .resend button{background:none;border:none;color:#c8a96e;cursor:pointer;font-size:12px;padding:0}
         .resend button:disabled{color:#6b6b64;cursor:not-allowed}
+        @media (max-width:420px){
+          .wrap{padding:20px 14px;align-items:flex-start}
+          .card{padding:28px 18px;max-width:100%}
+          .logo{font-size:16px;letter-spacing:0.08em;margin-bottom:24px;overflow-wrap:anywhere}
+          .title{font-size:28px}
+          .boxes{gap:6px}
+          .box{width:min(40px,13vw);height:50px;font-size:20px}
+          .btn{letter-spacing:0.12em}
+        }
       `}</style>
       <div className="wrap">
         <div className="card">
