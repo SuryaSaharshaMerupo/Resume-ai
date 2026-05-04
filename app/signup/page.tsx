@@ -51,7 +51,7 @@ export default function SignupPage() {
       `}</style>
       <div className="wrap">
         <div className="card">
-          <p className="logo" onClick={() => router.push("/")}>ResumeAI</p>
+          <p className="logo" onClick={() => router.push("/")}>ResumeFit AI</p>
           <h1 className="title">Create account</h1>
           <p className="sub">Start building job-winning resumes</p>
           {error && <div className="err">{error}</div>}

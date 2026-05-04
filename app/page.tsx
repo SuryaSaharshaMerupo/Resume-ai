@@ -100,7 +100,7 @@ export default function Home() {
 
       {/* NAV */}
       <nav>
-        <div className="nav-logo display">ResumeAI</div>
+        <div className="nav-logo display">ResumeFit AI</div>
         <div className="nav-links">
           <span className="nav-link" onClick={() => document.getElementById("how")?.scrollIntoView({ behavior: "smooth" })}>How it works</span>
           <span className="nav-link" onClick={() => router.push("/login")}>Sign in</span>
@@ -126,13 +126,13 @@ export default function Home() {
         <div className="hero-bg" />
         <div className="hero-grid" />
         <motion.p className="hero-eyebrow" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}>
-          AI Resume Builder — Precision Crafted
+          AI Resume Builder - ATS Resume Optimizer
         </motion.p>
         <motion.h1 className="hero-title display" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, delay: 0.2 }}>
-          Elevate<br /><em>Every</em><br />Application
+          ResumeFit<br /><em>AI</em>
         </motion.h1>
         <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }}>
-          Upload your resume. Paste the job description. Get a tailored, ATS-optimized document engineered to land interviews.
+          Build a tailored, ATS-friendly resume with AI. Upload your resume, paste a job description, and download a recruiter-ready PDF.
         </motion.p>
         <motion.div className="hero-btns" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.6 }}>
           <button className="btn-primary" onClick={handleCTA}>Build My Resume →</button>
@@ -202,8 +202,8 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer>
-        <div className="footer-logo display">ResumeAI</div>
-        <div className="footer-copy">Engineered for the modern job search — AI-tailored precision</div>
+        <div className="footer-logo display">ResumeFit AI</div>
+        <div className="footer-copy">AI resume builder for ATS-friendly job applications</div>
       </footer>
     </>
   );

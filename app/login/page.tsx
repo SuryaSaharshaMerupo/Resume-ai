@@ -55,7 +55,7 @@ export default function LoginPage() {
       `}</style>
       <div className="auth-wrap">
         <div className="auth-card">
-          <p className="auth-logo">ResumeAI</p>
+          <p className="auth-logo">ResumeFit AI</p>
           <h1 className="auth-title">Welcome back</h1>
           <p className="auth-sub">Sign in to continue building your career</p>
 

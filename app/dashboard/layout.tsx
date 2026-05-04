@@ -55,7 +55,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       `}</style>
       <div className="dash-shell">
         <aside className="sidebar">
-          <div className="sb-logo">ResumeAI</div>
+          <div className="sb-logo">ResumeFit AI</div>
           <nav className="sb-nav">
             {navItems.map(item => (
               <Link

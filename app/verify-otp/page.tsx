@@ -93,7 +93,7 @@ export default function VerifyOtpPage() {
       `}</style>
       <div className="wrap">
         <div className="card">
-          <p className="logo">ResumeAI</p>
+          <p className="logo">ResumeFit AI</p>
           <h1 className="title">Verify your identity</h1>
           <p className="sub">We sent a 6-digit code to</p>
           <p className="em">{email}</p>
