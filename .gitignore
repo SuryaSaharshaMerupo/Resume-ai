@@ -23,6 +23,8 @@
 # misc
 .DS_Store
 *.pem
+.codex-backups/
+tokenManager.setToken
 
 # debug
 npm-debug.log*
